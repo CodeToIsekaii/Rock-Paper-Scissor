@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCK PAPER SCISSORS PRJ</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- code here -->
+    <div class="container">
+      <div class="navtab" style="margin: 16px">
+        <input
+          type="radio"
+          name="button"
+          class="navtab-btn"
+          label="1 PLAYER"
+          id="1"
+        />
+        <input
+          type="radio"
+          name="button"
+          class="navtab-btn"
+          label="2 PLAYER"
+          id="2"
+        />
+      </div>
+      <h1
+        style="
+          text-align: center;
+          font-size: 40px;
+          margin: 10px;
+          color: burlywood;
+        "
+      >
+        ROCK PAPER SCISSORS GAMES
+      </h1>
+      <!-- 1player -->
+      <div class="content-change" data-id="1">
+        <!-- Player -->
+        <div>
+          <h2 class="h2-style">PLAYER</h2>
+          <div class="btn">
+            <div style="margin: 10px">
+              <button class="user" id="scissors">✌️</button>
+            </div>
+            <div style="margin: 10px">
+              <button class="user" id="rock">✊</button>
+            </div>
+            <div style="margin: 10px">
+              <button class="user" id="paper">🖐️</button>
+            </div>
+          </div>
+        </div>
+        <!-- Score table -->
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <div class="score-table">
+            SCORE
+            <div class="table">
+              <div class="score">
+                Player
+                <div class="numPoint" id="pointPlay">0</div>
+              </div>
+              <div style="margin-top: 16px; font-size: 40px; font-weight: 800">
+                –
+              </div>
+              <div class="score">
+                Computer
+                <div class="numPoint" id="pointCom">0</div>
+              </div>
+            </div>
+          </div>
+          <!-- Number Win -->
+          <div class="numberWin" style="display: flex; flex-direction: column">
+            <div style="padding: 5px; display: flex; width: 100%; height: 100%">
+              <div
+                class="numWin"
+                style="
+                  border-right: 2.5px solid #141b27;
+                  background-color: #396d74;
+                  color: #162a3a;
+                "
+              >
+                Human
+                <div class="numOfPoint" style="color: #d2e7ff">
+                  <!--  -->
+                </div>
+              </div>
+              <div
+                class="numWin"
+                style="
+                  border-left: 2.5px solid #141b27;
+                  background-color: #396d74;
+                  color: #162a3a;
+                "
+              >
+                Machine
+                <div class="numOfPoint" style="color: #d2e7ff">
+                  <!--  -->
+                </div>
+              </div>
+            </div>
+            <div style="width: 250px; height: 68.6px; margin: 0 auto">
+              <button id="btn-reset" class="resetBtn">RESET</button>
+            </div>
+          </div>
+        </div>
+        <!-- Computer -->
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          "
+        >
+          <h2 class="h2-style">COMPUTER</h2>
+          <div class="btn">
+            <div style="margin: 10px">
+              <span id="computer">✌️</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2player -->
+      <div class="content-change" data-id="2">
+        <!-- Player 1 -->
+        <div class="pl2-style">
+          <h2 class="h2-style">Player 1</h2>
+          <div class="btn">
+            <div style="margin: 10px">
+              <button class="user">✌️</button>
+            </div>
+            <div style="margin: 10px">
+              <button class="user">✊</button>
+            </div>
+            <div style="margin: 10px">
+              <button class="user">🖐️</button>
+            </div>
+          </div>
+        </div>
+        <!-- Player 2 -->
+        <div class="pl2-style">
+          <h2 class="h2-style">Player 2</h2>
+          <div class="btn">
+            <div style="margin: 10px">
+              <button class="user">✌️</button>
+            </div>
+            <div style="margin: 10px">
+              <button class="user">✊</button>
+            </div>
+            <div style="margin: 10px">
+              <button class="user">🖐️</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Notification -->
+      <div class="notification" style="text-align: center"></div>
+      <!-- Play Again -->
+      <div class="play-again">
+        <button id="btn-play-again">PLAY AGAIN</button>
+      </div>
+    </div>
+    <span
+      style="
+        display: inline-block;
+        position: absolute;
+        top: 64rem;
+        left: 136rem;
+        color: #395151bf;
+        font-weight: 600;
+      "
+      >CODERB</span
+    >
+    <!-- code here -->
+    <script src="./index.js"></script>
+  </body>
+</html>
